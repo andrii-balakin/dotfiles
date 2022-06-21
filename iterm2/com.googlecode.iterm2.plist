@@ -3962,7 +3962,7 @@
 			<key>Idle Code</key>
 			<integer>0</integer>
 			<key>Initial Text</key>
-			<string>/usr/local/bin/tmux -CC new -A -s main</string>
+			<string>$(which tmux) -CC new -A -s main</string>
 			<key>Initial Use Transparency</key>
 			<false/>
 			<key>Jobs to Ignore</key>
