@@ -18,6 +18,7 @@ if dein#load_state('/Users/andriibalakin/.local/share/dein')
     call dein#add('morhetz/gruvbox')
     call dein#add('sonph/onehalf', { 'rtp': 'vim' })
     call dein#add('NLKNguyen/papercolor-theme')
+    call dein#add('f-person/auto-dark-mode.nvim')
 
     " Basic
     call dein#add('itchyny/lightline.vim')

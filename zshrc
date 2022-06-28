@@ -15,6 +15,10 @@ zstyle ':vcs_info:*' enable git
 # iterm2 integration
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+# aliases
+alias v="nvim"
+alias vd="nvim -d"
+
 # pyenv initialization
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"

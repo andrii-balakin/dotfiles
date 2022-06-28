@@ -12,6 +12,7 @@ source ~/.config/nvim/tagbar.vim
 source ~/.config/nvim/ale.vim
 source ~/.config/nvim/gruvbox.vim
 source ~/.config/nvim/deoplete.vim
+source ~/.config/nvim/auto-dark-mode.lua
 
 " Tab settings
 set tabstop=4
@@ -94,8 +95,10 @@ autocmd FileType python noremap <buffer> <F9> :exec '!python3' shellescape(@%, 1
 "autocmd FileType python noremap <buffer> <F9> :w<cr> :exec '!python3' shellescape(@%, 1)<cr>
 "nnoremap <F9> :w<cr>:!chmod +x %<cr>:!./%<cr>
 "set t_Co=256
+"
 colorscheme PaperColor
-set background=dark
+set background=light
+"
 "hi colorcolumn guibg=#472448
 "hi cursorline ctermfg=white
 "set columns=79
@@ -148,5 +151,17 @@ function! ChooseTerm(termname, slider)
         :set foldcolumn=0
         :startinsert
     endif
+endfunction
+
+function! DarkMode()
+    set background=dark
+    let g:lightline = { 'colorscheme': 'PaperColor_dark', }
+    call LightlineReload()
+endfunction
+
+function! LightMode()
+    set background=light
+    let g:lightline = { 'colorscheme': 'PaperColor_light', }
+    call LightlineReload()
 endfunction
 
