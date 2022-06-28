@@ -40,5 +40,5 @@ nvim --headless +qa
 
 # iterm2
 brew install iterm2
-rmdir /Users/andriibalakin/Library/Application\ Support/iTerm2/Scripts                                                                                                                   (master)dotfiles 15:56:27
+rmdir /Users/andriibalakin/Library/Application\ Support/iTerm2/Scripts
 ln -s ~/dotfiles/iterm2/Scripts /Users/andriibalakin/Library/Application\ Support/iTerm2/Scripts

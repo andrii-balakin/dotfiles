@@ -96,8 +96,9 @@ autocmd FileType python noremap <buffer> <F9> :exec '!python3' shellescape(@%, 1
 "nnoremap <F9> :w<cr>:!chmod +x %<cr>:!./%<cr>
 "set t_Co=256
 "
-colorscheme PaperColor
-set background=light
+set termguicolors
+"colorscheme PaperColor
+"set background=dark
 "
 "hi colorcolumn guibg=#472448
 "hi cursorline ctermfg=white
@@ -105,7 +106,6 @@ set background=light
 "set wrap
 "
 set cursorline
-"set termguicolors
 set guicursor+=a:blinkon1
 set colorcolumn=80
 
@@ -155,12 +155,14 @@ endfunction
 
 function! DarkMode()
     set background=dark
+    colorscheme PaperColor
     let g:lightline = { 'colorscheme': 'PaperColor_dark', }
     call LightlineReload()
 endfunction
 
 function! LightMode()
     set background=light
+    colorscheme PaperColor
     let g:lightline = { 'colorscheme': 'PaperColor_light', }
     call LightlineReload()
 endfunction
