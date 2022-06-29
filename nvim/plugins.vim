@@ -36,7 +36,7 @@ if dein#load_state('/Users/andriibalakin/.local/share/dein')
     call dein#add('deoplete-plugins/deoplete-clang')
 
     " Linting
-    call dein#add('dense-analysis/ale')
+    " call dein#add('dense-analysis/ale')
 
     " You can specify revision/branch/tag.
     " call dein#add('Shougo/vimshell', { 'rev': '3787e5' })

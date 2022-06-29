@@ -106,7 +106,7 @@ set termguicolors
 "set wrap
 "
 set cursorline
-set guicursor+=a:blinkon1
+"set guicursor+=a:blinkon1
 set colorcolumn=80
 
 "hi! link signcolumn linenr
